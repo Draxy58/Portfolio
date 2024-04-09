@@ -1,0 +1,98 @@
+/* Basic Reset */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #f0f0f0; /* Light text color */
+  background-color: #000; /* Pure black background */
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 50px; /* Adjust as necessary */
+}
+
+.tagline h1, .tagline p {
+  margin-bottom: 10px;
+  color: #ffffff; /* Ensure visibility */
+}
+
+/* Navigation Styles */
+nav {
+  background: #222; /* Slightly lighter black for contrast */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #ddd; /* Light grey for readability */
+  transition: color 0.3s ease-out;
+}
+
+.nav-list a:hover {
+  color: #4DBFE8; /* Bright color for contrast and attention */
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Styling */
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #333; /* Subtle separators */
+}
+
+/* Animations for Sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222; /* Consistent with nav bar */
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li {
+    margin: 10px 0;
+  }
+}
